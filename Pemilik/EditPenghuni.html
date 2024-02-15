@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../w3.css">
 </head>
 <body style="background-color: paleturquoise;">
+    
     <div class="w3-container w3-margin-top" style="max-width: 500px; margin: auto;">
         <h2 class="w3-center">Edit Data Penghuni</h2>
         <form class="w3-container" action="" method="POST">
@@ -26,10 +27,16 @@
             <label class="w3-text-blue">List Kamar</label>
             <input class="w3-input w3-border" type="text" name="listkamar">
             <center>
-            <button a href="FramesetPemilik.html"class="w3-btn w3-green w3-round-large w3-margin-top" type="submit" style="width: 200px;">Simpan Perubahan</button>
+            <button onclick="apawelah()" class="w3-btn w3-green w3-round-large w3-margin-top" style="width: 200px;">Simpan Perubahan</button>
             <a href="listKamarPemilik.html" class="w3-btn w3-green w3-round-large w3-margin-top" style="width: 200px;">Kembali</a>
             </center>
         </form>
     </div>
+    <script>
+        function apawelah(){
+            alert("Perubahan Telah Disimpan."); window.location.href = "listKamarPemilik.html";
+        }
+    
+        </script>
 </body>
 </html>
