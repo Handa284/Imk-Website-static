@@ -46,6 +46,15 @@
         }
 
     </style>
+    <?php
+        require("../koneksi.php");
+        $sqlLaporan = "SELECT isilaporan FROM laporan";
+        $resultLaporan = mysqli_query($conn, $sqlLaporan);
+        $laporanList = "";
+        while ($row = mysqli_fetch_assoc($resultLaporan)) {
+        $laporanList .= $row['isilaporan'] . "\n";
+        }
+    ?>
 </head>
 <body style="background-color:paleturquoise;">
 
@@ -53,22 +62,22 @@
     <div class="w3-half w3-container">
         <div class="w3-row">
             <div class="w3-col marginCustom">
-                <button class="w3-button w3-ripple w3-hover"><h1>XXXXXXX</h1><span class="status-text">XX-XX-20XX</span></button>
+                <button class="w3-button w3-ripple w3-hover"><h1>Kamar 1 : <?php echo $laporanList; ?></h1><span class="status-text">15-02-2024</span></button>
             </div>
         </div>
         <div class="w3-row">
             <div class="w3-col marginCustom">
-                <button class="w3-button w3-ripple w3-hover"><h1>XXXXXXX</h1><span class="status-text">XX-XX-20XX</span></button>
+                <button class="w3-button w3-ripple w3-hover"></button>
             </div>
         </div>
         <div class="w3-row">
             <div class="w3-col marginCustom">
-                <button class="w3-button w3-ripple w3-hover"><h1>XXXXXXX</h1><span class="status-text">XX-XX-20XX</span></button>
+                <button class="w3-button w3-ripple w3-hover"></button>
             </div>
         </div>
         <div class="w3-row">
             <div class="w3-col marginCustom">
-                <button class="w3-button w3-ripple w3-hover"><h1>XXXXXXX</h1><span class="status-text">XX-XX-20XX</span></button>
+                <button class="w3-button w3-ripple w3-hover"></button>
             </div>
         </div>
     </div>
