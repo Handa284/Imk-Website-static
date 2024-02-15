@@ -10,35 +10,54 @@
             .profile-container {
                 display: flex;
                 align-items: top;
-                justify-content: center;
+                justify-content:center;
+                font-family: Arial;
+            }
+
+            #ProfilePenghuni {
+                direction: ltr;
+                unicode-bidi: embed;
             }
         </style>
         <div class="w3-col w3-container w3-margin-top profile-container" style="width: 15%; position: relative">
             <label style="position: absolute; pointer-events: none">
                 <h3>Profile</h3>
             </label>
-            <textarea class="w3-input w3-border w3-round-large" id="ProfilePenghuni" readonly style="padding-top: 75px; height: 200px">
-                Username : handa
-                \nNama : Raihan R
-                \nNo Kamar : 1
-                \nJenis Kelamin : L 
-                \nAlamat : Jl.
+            <textarea class="w3-input w3-border w3-round-large" id="ProfilePenghuni" readonly style="padding-top: 70px; height: 220px;">
+Username       : handa
+Nama              : Raihan R
+No Kamar       : 1
+Jenis Kelamin : L 
+Alamat            : Jl. Cigadung
             </textarea>
         </div>
         <div class="w3-col w3-container w3-margin-top profile-container" style="width: 70%; position: relative">
             <label style="position: absolute; pointer-events: none">
                 <h3>Pengumuman</h3>
             </label>
-            <textarea class="w3-input w3-border w3-round-large" id="PPenghuni" readonly
-                style="padding-top: 75px; height: 700px">
-        </textarea>
+            <textarea class="w3-input w3-border w3-round-xxlarge" id="PPenghuni" readonly style="padding-top: 75px; height: 700px;;">
+                Kepada seluruh penghuni kost, kami ingin mengingatkan beberapa hal:
+
+                1. Jam Malam: Mohon untuk kembali ke kost sebelum pukul 22.00 WIB. 
+                    Jika ada keperluan mendesak dan terpaksa pulang lewat dari jam tersebut, harap beritahu 
+                    penjaga kost terlebih dahulu.
+                2. Kebersihan: Harap menjaga kebersihan area kost, termasuk kamar masing-masing. Jangan 
+                    lupa untuk membuang sampah pada tempatnya.
+                3. Pembayaran: Pembayaran kost dilakukan setiap tanggal 1 setiap bulannya. Mohon untuk 
+                    tidak telat melakukan pembayaran.
+                4. Kehilangan Barang: Kost tidak bertanggung jawab atas kehilangan barang pribadi. 
+                    Harap selalu mengunci pintu kamar saat keluar.
+                
+                Terima kasih atas perhatiannya. Mari kita jaga kenyamanan bersama.
+            </textarea>
         </div>
         <div class="w3-col w3-container w3-margin-top profile-container" style="width: 15%; position: relative">
             <label style="position: absolute; pointer-events: none">
                 <h3>Jatuh Tempo</h3>
             </label>
-            <textarea class="w3-input w3-border w3-round-large" id="JtPenghuni" readonly
-                style="padding-top: 75px; height: 150px"></textarea>
+            <textarea class="w3-input w3-border w3-round-large" id="JtPenghuni" readonly style="padding-top: 75px; height: 150px">
+                15-02-2024
+            </textarea>
         </div>
     </div>
 </body>
